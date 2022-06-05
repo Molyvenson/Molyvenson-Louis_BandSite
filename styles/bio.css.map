@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAAA,GAAG,CAAC;EACA,gBAAgB,EATJ,OAAO;CAUtB;;AAED,AAAA,MAAM,CAAC;EACH,gBAAgB,EAbJ,OAAO;CActB;;AAYD,AAAA,cAAc,CAAC;EACX,gBAAgB,EAAE,oCAAoC;EACtD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "bio.scss"
+    ],
+    "names": [],
+    "file": "bio.css"
+}

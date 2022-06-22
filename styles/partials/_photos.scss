@@ -1,0 +1,90 @@
+
+$blackOpaque: #323232;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+$bandSiteBlack: #323232;
+$bandSiteDarkBlack: #000000;
+$white:#9b4f4f;
+$silver:#AFAFAF;
+
+
+
+
+.photo__gallery-section {
+    width: 100%;
+
+    
+}
+
+.photo__gallery-container {
+    background-color: $mercury;
+    margin-bottom: 3%;
+   @include responsiveness (phone){
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+@include responsiveness (medium-screen) {
+    display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+}
+@include responsiveness (tablet) {
+    display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+}
+@include responsiveness (desktop) {
+    display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+}
+
+.photo_gallery-content {
+    @include responsiveness (phone) { 
+    width:100%
+    }
+    @include responsiveness (medium-screen) {
+        width: 30%;
+    }
+    @include responsiveness (tablet) {
+        width: 30%;
+    }
+
+    @include responsiveness (desktop) {
+        width: 30%;
+    }
+    
+
+}
+
+
+.photo_gallery-img {
+    @include responsiveness (phone) {   
+    width: 80%;
+    height: 30%;
+    margin-left: 6%;
+    margin-top: 6%;
+    }
+    @include responsiveness (medium-screen) {
+        width: 90%;
+        height: 30%;
+        margin-top: 4%;
+        margin-right: 4%;
+    }
+    @include responsiveness (tablet) {
+        width: 90%;
+        height: 30%;
+        margin-top: 4%;
+        margin-right: 4%;
+    }
+    @include responsiveness (desktop) {
+        width: 90%;
+        height: 30%;
+        margin-top: 4%;
+        margin-right: 4%;
+    }
+}

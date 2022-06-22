@@ -1,0 +1,195 @@
+
+
+@mixin avenirRegular {
+    font-family: AvenirRegular;
+    font-weight: 400 ;
+
+    
+}
+
+@mixin avenirDemi {
+    font-family: AvenirDemi;
+    font-weight: 600;
+
+    
+}
+
+@mixin avenirBold {
+    font-family: AvenirBold;
+    font-weight: 700;
+    
+}
+
+
+$blackOpaque: #323232;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+$bandSiteBlack: #323232;
+$bandSiteDarkBlack: #000000;
+$white:#9b4f4f;
+$silver:#AFAFAF;
+
+
+
+
+
+
+
+
+
+
+.article__section-container  {
+    margin-bottom: 10%;
+    @include responsiveness (phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        justify-content: center;
+     
+    }
+    @include responsiveness (medium-screen) {
+        display: flex;
+        flex-direction:row;
+        width: 90%;
+        justify-content: center;
+        font-size: medium;
+        font-weight: 25px;
+
+    }
+    @include responsiveness (tablet) {
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            width: 80%;
+            align-items: center;
+            align-self: center;
+            font-size: medium;
+            font-weight: 25px;
+    }
+    @include responsiveness (desktop) {
+
+            display: flex;
+            flex-direction:row;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+           align-self: center;
+           font-size: medium;
+           font-weight: 25px;
+    }
+}
+
+
+.article-_section-one  {
+    color: $bandSiteBlack;
+     @include avenirRegular();
+     line-height: 22px;
+    @include responsiveness (phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 99%;
+        margin-top: 7%;
+        padding-left: 6%;
+        padding-right: 2%;
+        font-size: 13px;
+        }
+    
+
+@include responsiveness (medium-screen) {
+    width: 45%;
+    padding-left: 3%;
+    padding-right: 2%;
+    margin-top: 7%;
+        font-size: 14px;
+    }
+    @include responsiveness (tablet) {
+        width: 40%;
+        padding-left: 3%;
+        padding-right: 2%;
+        margin-top: 7%;
+        font-size: 14px;
+        }
+        @include responsiveness (desktop) {
+            width: 46%;
+            padding-left: 3%;
+            padding-right: 2%;
+            margin-top: 7%;
+            height: 40%;
+            font-size: 14px;
+            }
+}
+
+
+
+
+
+
+.article__section-two  {
+    color: $bandSiteBlack;
+    @include avenirRegular();
+    line-height: 22px;
+    @include responsiveness (phone) {
+    width: 99%;
+    padding-left: 6%;
+    padding-right: 2%;
+    margin-top: 5%;
+    font-size: medium;
+    font-size: 13px;
+    }
+    @include responsiveness (medium-screen) {
+        width: 45%;
+        padding-left: 3%;
+        padding-right: 2%;
+        margin-top: 10%;
+        font-size: medium;
+        font-size: 14px;
+        
+        }
+        @include responsiveness (tablet) {
+            width: 40%;
+            padding-left: 3%;
+            padding-right: 2%;
+            margin-top: 10%;
+            font-size: medium;
+            font-size: 14px;
+            }
+            @include responsiveness (desktop) {
+                width: 40%;
+                padding-left: 3%;
+                padding-right: 2%;
+                margin-top: 10%;
+                height: 40%;
+                font-size: medium;
+                font-size: 14px;
+                }
+    }
+
+#article__title {
+    color: $bandSiteDarkBlack;
+    @include responsiveness (phone) {
+        margin-bottom: 4%;
+        @include avenirDemi();
+        font-size: 18px;
+        line-height: 32px;  
+    }
+    @include responsiveness (medium-screen) {
+    margin-bottom: 6%;
+    @include avenirDemi();
+    font-size: 24px;
+    line-height: 22px; 
+    }
+
+    @include responsiveness (tablet) {
+        margin-bottom: 8%;
+        @include avenirDemi();
+        font-size: 24px;
+        line-height: 22px; 
+        }
+
+
+   
+
+}

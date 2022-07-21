@@ -1,0 +1,28 @@
+
+@import './partials/_shows-header.scss';
+
+
+
+
+.shows_section-container {
+    border-style: dashed;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.infoList {
+    border-style: dashed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 80px;
+}

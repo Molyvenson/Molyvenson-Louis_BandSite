@@ -1,0 +1,404 @@
+$blackOpaque: #323232;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+$bandSiteBlack: #323232;
+$bandSiteDarkBlack: #000000;
+$white:#9b4f4f;
+$silver:#AFAFAF;
+
+@mixin avenirRegular {
+    font-family: AvenirRegular;
+    font-weight: 400 ;
+
+    
+}
+
+@mixin avenirDemi {
+    font-family: AvenirDemi;
+    font-weight: 600;
+
+    
+}
+
+@mixin avenirBold {
+    font-family: AvenirBold;
+    font-weight: 700;
+    
+}
+
+@mixin sectionResponsiveness {
+    width: 100%;
+    height: 100%;
+    
+}
+
+@mixin containerResponsiveness {
+    width: 90%;
+    height: 90%;
+    padding: 2.6rem;
+}
+
+@mixin flexRow { 
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@mixin responsiveness($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (min-width: 300px) {@content};
+    }
+
+    @if $breakpoint == medium-screen {
+        @media only screen and (min-width: 700px) {@content};
+        
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (min-width: 1000px) {@content};
+    }
+
+    @if $breakpoint == desktop {  
+        @media only screen and (min-width: 1950px) {@content};
+    }
+        
+    }
+
+
+   
+
+    .header__nav {
+        background-color: $bandSiteBlack;
+        display: flex;
+        max-width: 100%;
+        
+        
+        @include responsiveness(phone) {
+            display: flex;
+            justify-content: center;
+            min-height: 16rem;
+            max-width: 100%;
+        }
+        @include responsiveness(medium-screen) {
+            min-height: 0.7rem;
+            display: flex;
+            justify-content: center;
+            max-width: 100vh;
+
+        }
+        @include responsiveness(tablet){
+            min-height: 6rem;
+            display: flex;
+            justify-content: flex-start;
+            max-width: 100vh;
+           
+        }
+      @include responsiveness(desktop) {
+          max-height: 6rem;
+          display: flex;
+          justify-content: flex-start;
+          max-width: 100vh; 
+        
+      }
+    
+    }
+
+    .header__nav-container  {
+        min-width: 100%;
+        margin-left: 1.5rem;
+        
+      
+        
+        
+        
+        @include responsiveness(phone) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 100%;
+        
+        }
+        @include responsiveness(medium-screen) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 100%;
+           
+        
+        
+        }
+        @include responsiveness(tablet) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            min-width: 100%;
+            
+        }
+        @include responsiveness(desktop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            min-width: 100%;
+        }
+
+  }
+
+     
+
+ .header__nav-logo {
+   
+   
+     @include responsiveness(phone) {
+         display: flex;
+         justify-content: center;
+       
+     }
+     @include responsiveness(medium-screen) {
+       
+
+         display: flex;
+         justify-content: center;
+         margin-right: 2rem;
+         
+        
+         
+     }
+     @include responsiveness(tablet) {
+         display: flex;
+         justify-content: flex-start;
+         flex-direction: row;
+         margin-right: 4rem;
+     }
+     @include responsiveness(desktop) {
+         display: flex;
+         justify-content: flex-start;
+         flex-direction: row;
+         margin-right: 4rem;
+     }
+ }
+
+
+
+.header__nav-links_ul {
+    
+    list-style: none;
+    text-decoration: none;
+     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include responsiveness(phone) {
+        min-height: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    
+    }
+@include responsiveness(medium-screen) {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+   
+  
+}
+@include responsiveness(tablet) {
+    min-width: 42vh;
+    min-height: 100%;
+    align-items: center;
+    justify-content: space-around;
+   
+
+}
+
+@include responsiveness(desktop) {
+    max-width: 42vh;
+    min-height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+}
+
+
+.header__nav-links {
+    @include responsiveness(phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 3rem;
+        max-width: 100%;
+    }
+    @include responsiveness(medium-screen)  {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-height: 6.4rem;
+        align-items: center;
+        margin-left: 2rem;
+        
+      
+
+    }
+    @include responsiveness(tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-height: 6.4rem;
+        align-items: center;
+    
+    }
+    @include responsiveness(desktop)  {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-height: 6.4rem;
+        align-items: center;
+    }
+   
+}
+
+header {
+    max-width: 100%;
+    background-color: $bandSiteBlack;
+
+}
+
+.nav__hero-container {
+    width: 100%;
+}
+
+.hero__section {
+    background-image: url('../assets/images/hero-bio.jpg');
+    background-size: cover;
+    
+       height: 32rem;
+       padding-bottom: 24px;
+       padding-left: 16px;
+       padding-right: 80px;
+       padding-top: 24px;
+       @include responsiveness(tablet) {
+        height: 44rem;
+       }
+       @include responsiveness(desktop) {
+        height:46rem ;
+       }
+
+}
+
+
+#biography__link  {
+    @include avenirDemi();
+    color: $alabaster;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    @include responsiveness(phone) {
+        font-size: 24px;
+        
+    }
+    @include responsiveness(medium-screen) {
+        font-size: 24px;
+        margin-right: 4rem;
+
+    }
+    @include responsiveness(tablet) {
+       font-size: 24px;
+       margin-right: 4rem;
+    }
+    @include responsiveness(desktop) {
+        @include avenirRegular();
+        font-size: 22px;
+        margin-right: 4rem;
+    }
+
+    }
+
+
+
+#shows__link {
+    @include avenirDemi();
+    text-decoration: none;
+    color: $alabaster;
+    font-style:normal;
+    font-weight:normal;
+    @include responsiveness(phone) {
+        font-size: 24px;
+        padding-right: 3rem;
+        margin-left: 6.2rem;
+    
+    }
+    @include responsiveness(medium-screen) {
+        font-size: 24px;
+    }
+    @include responsiveness(tablet) {
+       font-size: 24px;
+    }
+    @include responsiveness(desktop) {
+        @include avenirRegular();
+        font-size: 22px;
+    }
+
+
+}
+
+
+.hero__section {
+    color: $alabaster;
+    @include avenirDemi();
+    font-size: 36px;
+    background-color: $blackOpaque;
+    opacity:60% ;
+
+
+}
+
+#header__logo  {
+    @include responsiveness(phone)  {
+       
+        width: 22rem;
+        height: 6rem;
+        
+    
+    }
+    @include responsiveness(medium-screen) {
+        width: 18rem;
+        height: 6;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @include responsiveness(tablet) {
+        width: 16rem;
+        height: 14rem;
+    }
+    @include responsiveness(desktop)  {
+        width: 9rem;
+        height: 6rem;
+
+    }
+}
+
+
+
+
+.hero__section-title  {
+    margin-left: 6%;
+    font-size: 190%;
+    color: #FAFAFA;
+ }
+
+ 
+ .hero__section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+ }
+
+#Hero__title {
+    color: $alabaster
+}
+
+

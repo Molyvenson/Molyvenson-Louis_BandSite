@@ -1,0 +1,72 @@
+
+
+@import './partials/_header.scss';
+@import './partials/_article.scss';
+@import './partials/_musicians.scss';
+@import './partials/_photos.scss';
+@import './partials/_footer.scss';
+
+@font-face {
+    font-family: AvenirBold;
+    src: url(../assets/Font/AvenirNextLTPro-Bold.otf);
+}
+
+@font-face {
+    font-family: AvenirDemi  ;
+    src: url(../assets\Font\AvenirNextLTPro-Demi.otf);
+}
+
+@font-face {
+    font-family: AvenirRegular;
+    src: url(../assets/Font/AvenirNextLTPro-Regular.otf);
+}
+
+
+@mixin avenirRegular {
+    font-family: AvenirRegular;
+    font-weight: 400 ;
+
+    
+}
+
+@mixin avenirDemi {
+    font-family: AvenirDemi;
+    font-weight: 600;
+
+    
+}
+
+@mixin avenirBold {
+    font-family: AvenirBold;
+    font-weight: 700;
+    
+}
+
+$blackOpaque: #323232;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+$bandSiteBlack: #323232;
+$bandSiteDarkBlack: #000000;
+$white:#9b4f4f;
+$silver:#AFAFAF;
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+
+html {
+    height: 100%;
+
+}
+body {
+    height: 100%;
+background-color: $alabaster;
+
+}
+

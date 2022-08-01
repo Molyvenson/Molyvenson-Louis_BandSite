@@ -1,0 +1,13 @@
+
+@import './partials/_shows-header.scss';
+@import './partials/_shows-footer.scss';
+
+
+.shows_section-container {
+    border-style: dashed;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+}
+
